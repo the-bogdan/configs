@@ -1,0 +1,53 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => General
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Sets how many lines of history VIM has to remember
+set history=500
+
+
+""""""""""""""""""""""""""""""
+" => Vim mappings
+""""""""""""""""""""""""""""""
+" copy to buffer
+set laststatus=2
+vmap <C-c> :w! ~/.vimbuffer<CR>
+nmap <C-c> :.w! ~/.vimbuffer<CR>
+" paste from buffer
+map <C-p> :r ~/.vimbuffer<CR>
+
+" With a map leader it's possible to do extra key combinations
+" like <leader>w saves the current file
+let mapleader = ","
+
+" Swithch to russian lang with Ctrl+^
+set keymap=russian-jcukenwin
+set iminsert=0
+imap <F8> <C-^>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => VIM user interface
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Ignore case when searching
+set ignorecase
+" When searching try to be smart about cases 
+set smartcase
+" Highlight search results
+set hlsearch
+" Makes search act like search in modern browsers
+set incsearch
+
+" 3 lines above/below cursor when scrolling
+set scrolloff=3
+
+" Show matching brackets when text indicator is over them
+set showmatch
+" How many tenths of a second to blink when matching brackets
+set mat=2
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => VIM user interface
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set ideajoin
+
