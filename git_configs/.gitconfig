@@ -1,0 +1,11 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Bogdan Parshintsev
+	email = bparshintsev@bk.ru
+# Please adapt and uncomment the following lines:
+#	name = Bogdan
+#	email = bogdan@pop-os.localdomain
+[core]
+	editor = vim
+[commit]
+	template = /home/bogdan/.gitmessage.txt
