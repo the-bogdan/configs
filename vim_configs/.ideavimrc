@@ -10,20 +10,10 @@ set history=500
 """"""""""""""""""""""""""""""
 " copy to buffer
 set laststatus=2
-vmap <C-c> :w! ~/.vimbuffer<CR>
-nmap <C-c> :.w! ~/.vimbuffer<CR>
-" paste from buffer
-map <C-p> :r ~/.vimbuffer<CR>
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
-let mapleader = ","
-
-" Swithch to russian lang with Ctrl+^
-set keymap=russian-jcukenwin
-set iminsert=0
-imap <F8> <C-^>
-
+let mapleader = " "
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
@@ -45,9 +35,100 @@ set showmatch
 " How many tenths of a second to blink when matching brackets
 set mat=2
 
+nmap <leader>q :action CloseContent<cr>
+nmap <leader>Q :action ReopenClosedTab<cr>
+
+nmap <leader>o o<Esc>k
+nmap <leader>O O<Esc>j
+
+nmap <leader>i :action SplitHorizontally<cr>
+nmap <leader>s :action SplitVertically<cr>
+
+nmap <leader>j :action PrevSplitter<cr>
+nmap <leader>k :action NextSplitter<cr>
+
+nmap <leader>h :action Back<cr>
+nmap <leader>l :action Forward<cr>
+nmap <leader>L :action RecentLocations<cr>
+nmap <leader>g :action GotoDeclaration<cr>
+nmap <leader>u :action FindUsages<cr>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => VIM user interface
+" => VIM plugins emulation
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set easymotion
+nmap <leader>f <Plug>(easymotion-s)
+
+set surround
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => VIM supporting russian keyboard
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set ideajoin
 
+map й q
+map ц w
+map у e
+map к r
+map е t
+map н y
+map г u
+map ш i
+map щ o
+map з p
+map х [
+map ъ ]
+map ф a
+map ы s
+map в d
+map а f
+map п g
+map р h
+map о j
+map л k
+map д l
+map ж ;
+map э '
+map ё \
+map я z
+map ч x
+map с c
+map м v
+map и b
+map т n
+map ь m
+map б ,
+map ю .
+map Й Q
+map Ц W
+map У E
+map К R
+map Е T
+map Н Y
+map Г U
+map Ш I
+map Щ O
+map З P
+map Х {
+map Ъ }
+map Ф A
+map Ы S
+map В D
+map А F
+map П G
+map Р H
+map О J
+map Л K
+map Д L
+map Ж :
+map Э "
+map Я Z
+map Ч X
+map С C
+map М V
+map И B
+map Т N
+map Ь M
+map Б <
+map Ю >
+map Ё /|
