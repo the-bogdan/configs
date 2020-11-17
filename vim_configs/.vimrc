@@ -14,6 +14,7 @@ Plug 'nvie/vim-flake8'
 Plug 'vim-syntastic/syntastic'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+Plug 'mtdl9/vim-log-highlighting'
 
 call plug#end()
 
