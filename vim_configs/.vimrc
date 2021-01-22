@@ -33,9 +33,7 @@ au FocusGained,BufEnter * checktime
 let mapleader = " "
 
 " Swithch to russian lang with Ctrl+^
-set keymap=russian-jcukenwin
 set iminsert=0
-imap <F8> <C-^>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
