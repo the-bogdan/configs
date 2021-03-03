@@ -93,12 +93,14 @@ alias la='ls -A'
 alias l='ls -CF'
 alias ls='ls -F'
 
-
+# bash history alias
 alias hg='history | grep'
+
+# python virtualenv aliases
 alias ve='virtualenv .env'
 alias va='source .env/bin/activate'
 
-
+# git aliases
 alias gp='git pull'
 alias gc='git checkout'
 alias gcb='git checkout -b'
