@@ -100,12 +100,6 @@ alias hg='history | grep'
 alias ve='virtualenv .env'
 alias va='source .env/bin/activate'
 
-# git aliases
-alias gp='git pull'
-alias gc='git checkout'
-alias gcb='git checkout -b'
-alias gcom='git commit'
-
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
