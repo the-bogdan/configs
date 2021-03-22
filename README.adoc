@@ -1,0 +1,64 @@
+# My configs for git, vim and bash
+
+
+Apply .bashrc:
+```
+mkdir apply_configs_tmp && \
+git clone https://github.com/GaD-Bogdan/configs.git apply_configs_tmp && \
+mv apply_configs_tmp/bash_configs/.bashrc ~/ && \
+rm -rf apply_configs_tmp
+```
+
+Apply .vimrc:
+```
+mkdir apply_configs_tmp && \
+git clone https://github.com/GaD-Bogdan/configs.git apply_configs_tmp && \
+mv apply_configs_tmp/vim_configs/.vimrc ~/ && \
+rm -rf apply_configs_tmp
+```
+
+Apply .ideavimrc
+```
+mkdir apply_configs_tmp && \
+git clone https://github.com/GaD-Bogdan/configs.git apply_configs_tmp && \
+mv apply_configs_tmp/vim_configs/.ideavimrc ~/ && \
+rm -rf apply_configs_tmp
+```
+
+Apply all for bash and vim
+```
+mkdir apply_configs_tmp && \
+git clone https://github.com/GaD-Bogdan/configs.git apply_configs_tmp && \
+mv apply_configs_tmp/bash_configs/.bashrc ~/ && \
+mv apply_configs_tmp/vim_configs/.vimrc ~/ && \
+mv apply_configs_tmp/vim_configs/.ideavimrc ~/ && \
+rm -rf apply_configs_tmp
+```
+
+Apply .gitconfig
+```
+mkdir apply_configs_tmp && \
+git clone https://github.com/GaD-Bogdan/configs.git apply_configs_tmp && \
+mv apply_configs_tmp/git_configs/.gitconfig ~/ && \
+rm -rf apply_configs_tmp
+```
+
+Apply .gitmessage.txt
+```
+mkdir apply_configs_tmp && \
+git clone https://github.com/GaD-Bogdan/configs.git apply_configs_tmp && \
+mv apply_configs_tmp/git_configs/.gitmessage.txt ~/ &&
+rm -rf apply_configs_tmp
+```
+
+Apply all
+```
+mkdir apply_configs_tmp && \
+git clone https://github.com/GaD-Bogdan/configs.git apply_configs_tmp && \
+mv apply_configs_tmp/bash_configs/.bashrc ~/ && \
+mv apply_configs_tmp/vim_configs/.vimrc ~/ && \
+mv apply_configs_tmp/vim_configs/.ideavimrc ~/ && \
+mv apply_configs_tmp/git_configs/.gitconfig ~/ && \
+mv apply_configs_tmp/git_configs/.gitmessage.txt ~/ &&
+rm -rf apply_configs_tmp
+```
