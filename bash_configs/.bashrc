@@ -1,4 +1,10 @@
 # If not running interactively, don't do anything
+# For default use go modules instead go path
+export GO111MODULE="on"
+
+# For autocompletion Makefile commands
+complete -W "\`grep -oE '^[a-zA-Z0-9_.-]+:([^=]|$)' ?akefile | sed 's/[^a-zA-Z0-9_.-]*$//'\`" make
+
 case $- in
     *i*) ;;
       *) return;;
