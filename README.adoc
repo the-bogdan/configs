@@ -1,11 +1,24 @@
 = My configs for git, vim and bash
 
+Apply .zshrc:
+[source, bash]
+----
+# install oh my zsh https://ohmyz.sh/
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# download config file from git
+mkdir apply_configs_tmp && \
+git clone https://github.com/GaD-Bogdan/configs.git apply_configs_tmp && \
+mv apply_configs_tmp/terminal/.zshrc ~/.zshrc && \
+rm -rf apply_configs_tmp
+----
+
 Apply .bashrc:
 [source, bash]
 ----
 mkdir apply_configs_tmp && \
 git clone https://github.com/GaD-Bogdan/configs.git apply_configs_tmp && \
-mv apply_configs_tmp/bash_configs/.bashrc ~/.bashrc && \
+mv apply_configs_tmp/terminal/.bashrc ~/.bashrc && \
 rm -rf apply_configs_tmp
 ----
 
@@ -14,7 +27,7 @@ Apply .vimrc:
 ----
 mkdir apply_configs_tmp && \
 git clone https://github.com/GaD-Bogdan/configs.git apply_configs_tmp && \
-mv apply_configs_tmp/vim_configs/.vimrc ~/.vimrc && \
+mv apply_configs_tmp/vim/.vimrc ~/.vimrc && \
 rm -rf apply_configs_tmp
 ----
 _* Для установки плагинов используется менеджер плагинов https://github.com/junegunn/vim-plug[vim-plug]_
@@ -24,7 +37,7 @@ Apply .ideavimrc
 ----
 mkdir apply_configs_tmp && \
 git clone https://github.com/GaD-Bogdan/configs.git apply_configs_tmp && \
-mv apply_configs_tmp/vim_configs/.ideavimrc ~/.ideavimrc && \
+mv apply_configs_tmp/vim/.ideavimrc ~/.ideavimrc && \
 rm -rf apply_configs_tmp
 ----
 
@@ -33,9 +46,9 @@ Apply all for bash and vim
 ----
 mkdir apply_configs_tmp && \
 git clone https://github.com/GaD-Bogdan/configs.git apply_configs_tmp && \
-mv apply_configs_tmp/vim_configs/.vimrc ~/.vimrc && \
-mv apply_configs_tmp/bash_configs/.bashrc ~/.bashrc && \
-mv apply_configs_tmp/vim_configs/.ideavimrc ~/.ideavimrc && \
+mv apply_configs_tmp/vim/.vimrc ~/.vimrc && \
+mv apply_configs_tmp/terminal/.bashrc ~/.bashrc && \
+mv apply_configs_tmp/vim/.ideavimrc ~/.ideavimrc && \
 rm -rf apply_configs_tmp
 ----
 
@@ -44,7 +57,7 @@ Apply .tmux.conf
 ----
 mkdir apply_configs_tmp && \
 git clone https://github.com/GaD-Bogdan/configs.git apply_configs_tmp && \
-mv apply_configs_tmp/bash_configs/.tmux.conf ~/.tmux.conf && \
+mv apply_configs_tmp/terminal/.tmux.conf ~/.tmux.conf && \
 rm -rf apply_configs_tmp
 ----
 
@@ -53,7 +66,7 @@ Apply .gitconfig
 ----
 mkdir apply_configs_tmp && \
 git clone https://github.com/GaD-Bogdan/configs.git apply_configs_tmp && \
-mv apply_configs_tmp/git_configs/.gitconfig ~/.gitconfig && \
+mv apply_configs_tmp/git/.gitconfig ~/.gitconfig && \
 rm -rf apply_configs_tmp
 ----
 
@@ -62,7 +75,7 @@ Apply .gitmessage.txt
 ----
 mkdir apply_configs_tmp && \
 git clone https://github.com/GaD-Bogdan/configs.git apply_configs_tmp && \
-mv apply_configs_tmp/git_configs/.gitmessage.txt ~/.gitmessage.txt &&
+mv apply_configs_tmp/git/.gitmessage.txt ~/.gitmessage.txt &&
 rm -rf apply_configs_tmp
 ----
 
@@ -71,11 +84,11 @@ Apply all
 ----
 mkdir apply_configs_tmp && \
 git clone https://github.com/GaD-Bogdan/configs.git apply_configs_tmp && \
-mv apply_configs_tmp/vim_configs/.vimrc ~/.vimrc && \
-mv apply_configs_tmp/bash_configs/.bashrc ~/.bashrc && \
-mv apply_configs_tmp/vim_configs/.ideavimrc ~/.ideavimrc && \
-mv apply_configs_tmp/git_configs/.gitconfig ~/.gitconfig && \
-mv apply_configs_tmp/bash_configs/.tmux.conf ~/.tmux.conf && \
-mv apply_configs_tmp/git_configs/.gitmessage.txt ~/.gitmessage.txt && \
+mv apply_configs_tmp/vim/.vimrc ~/.vimrc && \
+mv apply_configs_tmp/terminal/.bashrc ~/.bashrc && \
+mv apply_configs_tmp/vim/.ideavimrc ~/.ideavimrc && \
+mv apply_configs_tmp/git/.gitconfig ~/.gitconfig && \
+mv apply_configs_tmp/terminal/.tmux.conf ~/.tmux.conf && \
+mv apply_configs_tmp/git/.gitmessage.txt ~/.gitmessage.txt && \
 rm -rf apply_configs_tmp
 ----
